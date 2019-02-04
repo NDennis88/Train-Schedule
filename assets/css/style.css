@@ -1,0 +1,16 @@
+#container {
+    width: 90%;
+}
+
+
+tr {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    display: inline-block;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}

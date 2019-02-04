@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Righteous" rel="stylesheet">
+    <title>Train Schedule</title>
+</head>
+<body>
+<style>
+body {
+    background: url("assets/images/train station hallway.jpeg");
+    font-family: Poiret One, cursive;
+    font-size: 18px;
+}
+</style>
+<div class = "container">
+    <div class="jumbotron jumbotron-fluid" style = "border-radius: 5px; background: yellowgreen; text-align: center; padding-top: 25px; padding-bottom: 25px; color: maroon">
+        <div class="container">
+          <h1 class="display-4" style = "font-weight: bold; font-size: 80px">SOUL TRAIN</h1>
+          <p class="lead" style = "font-weight: bolder; font-size: 30px">Peace Love & Soul</p>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-xs-12 col-sm-9">
+      <div class="card" style = "border: yellowgreen">
+          <div class="card-header" style = "background: yellowgreen; font-weight: bolder; font-size: 20px; color: maroon">
+           Current Train Schedule
+          </div>
+      <div class="panel panel-primary">
+					<div class="panel-heading">
+					</div>
+					<div class="panel-body">
+						<table class="table table-hover" id='trainTable'>
+							<thead>
+								<tr>
+									<th>Train Name</th>
+									<th>Destination</th>
+									<th>Frequency</th>
+									<th>Next Arrival</th>
+									<th>Minutes Away</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+							</tbody>
+						</table>
+          </div>
+        </div>
+        </div>
+    </div>
+    <br>
+
+      <div class = "col-xs-12 col-sm-3">
+      <div class="card" style = "border: yellowgreen; padding-bottom: 10px">
+            <div class="card-header" style = "background: yellowgreen; font-weight: bolder; font-size: 20px; color: maroon">
+              Add Train
+            </div>
+      <form>
+        <div class="form-group">
+          <label for="train name">Train Name</label>
+          <input type="text" class="form-control" id="train-name">
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <input type="text" class="form-control" id="train-destination">
+        </div>
+        <div class="form-group">
+            <label for="time">First Train Time (HH:mm - military time)</label>
+            <input type="text" class="form-control" id="train-time">
+          </div>
+          <div class="form-group">
+            <label for="frequency">Frequency (min)</label>
+            <input type="text" class="form-control" id="train-frequency">
+        </div>
+        <button type="submit" class="btn" id = "add-train" style="background-color:maroon; color: yellowgreen; font-size: 18px">Submit</button>
+      </form>
+    </div>
+  </div>
+  </div>
+</div>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script src= "https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- <script src="assets/javascript/apps.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="assets/javascript/apps.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script> -->
+    
+</body>
